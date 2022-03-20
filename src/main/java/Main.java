@@ -5,25 +5,26 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bem vindo(a)! Precisamos de alguns dados para o seu cadastro em nossa empresa Farmaco % cia.");
         System.out.println("Qual seu primeiro nome?"); // 1
-        String nome = sc.next();
+        String nome = sc.nextLine();
         System.out.println("E seu sobrenome?"); //2
-        String sobrenome = sc.next();
+        String sobrenome = sc.nextLine();
         System.out.println("Seja bem vindo(a), " + nome + "! Qual é sua idade?"); // 3
         int idade = sc.nextInt();
         System.out.println("E qual é o seu gênero? (Responder F para feminino ou M para masculino)"); // 4
-        char letra = sc.next().charAt(0);
+        sc.nextLine();
+        char letra = sc.nextLine().charAt(0);
         System.out.println("Qual o seu CPF? (Exemplo: 123.456.789-00)"); // 5
-        String cpf = sc.next();
+        String cpf = sc.nextLine();
         System.out.println("Você possui plano de saúde? Se sim, qual?"); // 6
-        String planoSaude = sc.next();
+        String planoSaude = sc.nextLine();
         System.out.println("Você é PCD? (Pessoa com deficiência). Responder com sim ou não."); // 7
-        String respostaPCD = sc.next();
+        String respostaPCD = sc.nextLine();
         System.out.println("Você já possui o cartão fidelidade Farmaco & cia?"); // 8
-        String cartao = sc.next();
+        String cartao = sc.nextLine();
         System.out.println("Qual seu telefone? (Com DDD, sem espaço e sem travessão)"); // 9
-        String telefone = sc.next();
+        String telefone = sc.nextLine();
         System.out.println("Como conheceu a Farmaco & cia?"); // 10
-        String conhecer = sc.next();
+        String conhecer = sc.nextLine();
         System.out.println("Muito obrigado! Seu cadastro está concluído.");
 
 
